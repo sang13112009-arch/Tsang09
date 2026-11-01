@@ -5,6 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        /* Styling cho nút bấm nổi bật trên cùng trang */
+        .header-btn-container {
+            text-align: center;
+            margin: 20px 0 30px 0;
+        }
+
+        .custom-link-btn {
+            display: inline-block;
+            padding: 12px 28px;
+            font-size: 16px;
+            font-weight: 600;
+            color: #2c3e50;
+            text-decoration: none;
+            background: linear-gradient(135deg, #ffffff, #f0f3f6);
+            /* Viền gradient tinh tế */
+            border: 2px solid transparent;
+            border-image: linear-gradient(45deg, #007bff, #00ffcc) 1;
+            border-radius: 8px; /* Lưu ý: border-image có thể đè border-radius trên 1 số trình duyệt, dùng box-shadow để tạo viền mượt */
+            border: 2px solid #007bff;
+            box-shadow: 0 4px 15px rgba(0, 123, 255, 0.2);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        /* Hiệu ứng hover cho nút bấm */
+        .custom-link-btn:hover {
+            color: #ffffff;
+            background-color: #007bff;
+            border-color: #0056b3;
+            box-shadow: 0 6px 20px rgba(0, 123, 255, 0.4);
+            transform: translateY(-2px);
+        }
+
         /* Styling cho khung chứa ảnh */
         .img-box {
             display: inline-block;
@@ -14,6 +47,7 @@
             background-color: #ffffff;   /* Màu nền phía sau ảnh */
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Tạo hiệu ứng đổ bóng cho khung */
             transition: transform 0.3s ease; /* Hiệu ứng mượt mà khi hover */
+            margin: 5px;                 /* Thêm khoảng cách giữa các khung ảnh */
         }
 
         /* Hiệu ứng phóng nhẹ khi di chuột vào khung ảnh */
@@ -31,6 +65,14 @@
     </style>
 </head>
 <body>
+
+    <!-- Nút bấm dẫn đến link khác trên cùng trang -->
+    <div class="header-btn-container">
+        <!-- Bạn hãy thay https://example.com bằng liên kết thực tế của bạn -->
+        <a href="https://sang13112009-arch.github.io/sang01/" target="_blank" class="custom-link-btn">
+            🔗 TRANG CHỦ
+        </a>
+    </div>
 
     <!-- Khung chứa ảnh -->
     <div class="img-box">
@@ -69,7 +111,7 @@
         <img src="https://cdn.imagetourls.com/uploads/tyImg/OFSUCbhq.jpg" alt="Hình ảnh ví dụ" width="400">
     </div><div class="img-box">
         <!-- Thay link bên dưới bằng đường dẫn ảnh của bạn -->
-        <img src="D:\DLG\a7sang.jpg" alt="Hình ảnh ví dụ" width="400">
+        <img src="https://cdn.imagetourls.com/uploads/tyImg/mhG0CdoG.jpg" alt="Hình ảnh ví dụ" width="400">
     </div>
 
 </body>
